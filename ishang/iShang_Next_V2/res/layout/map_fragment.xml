@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/sample_background"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/detail_title"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        layout="@layout/title_menu2" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="20.0dp"
+        android:layout_marginRight="20.0dp"
+        android:layout_marginTop="10dp" >
+
+        <com.baidu.mapapi.map.MapView
+            android:id="@+id/simpleMap"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:clickable="true" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/rl_select_type"
+            style="@style/setting_item"
+            android:background="@drawable/listitem_round_up" >
+
+            <TextView
+                style="@style/ListItemTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="20.0dip"
+                android:duplicateParentState="true"
+                android:text="运动类型" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical" >
+
+                <ImageView
+                    android:id="@+id/imageview_run_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/image_content_description"
+                    android:src="@drawable/walk" />
+
+                <TextView
+                    android:id="@+id/textviewview_run_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:text="步行"
+                    android:textColor="@color/blueexpandable"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_marginRight="8dp"
+                    android:contentDescription="@string/image_content_description"
+                    android:src="@drawable/setting_more" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                android:src="@drawable/dotted_line_histogram" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_select_mode"
+            style="@style/setting_item"
+            android:layout_marginTop="0dp"
+            android:background="@drawable/listitem_round_bottom"
+            android:visibility="gone" >
+
+            <TextView
+                style="@style/ListItemTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="20.0dip"
+                android:duplicateParentState="true"
+                android:text="运动模式" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:gravity="center_vertical" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/image_content_description"
+                    android:src="@drawable/walk" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="普通运动"
+                    android:textColor="@color/blueexpandable"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_marginRight="8dp"
+                    android:contentDescription="@string/image_content_description"
+                    android:src="@drawable/setting_more" />
+            </LinearLayout>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativelaouut_start_runnnig"
+        style="@style/setting_item_and"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button_start_running" >
+
+        <TextView
+            style="@style/ListItemTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="20.0dip"
+            android:duplicateParentState="true"
+            android:text="开始运动"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+</LinearLayout>

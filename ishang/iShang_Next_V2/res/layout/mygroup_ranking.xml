@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/cmcc.mhealth"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/relativelayout_myranking"
+        android:layout_width="fill_parent"
+        android:layout_height="80dp"
+        android:background="@drawable/bg_myrank" >
+
+        <cmcc.mhealth.view.RoundAngleImageView
+            android:id="@+id/iamgeview_myrank_avater"
+            android:layout_width="70dp"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="4dip"
+            android:layout_marginLeft="34dp"
+            android:layout_marginRight="4dip"
+            android:layout_marginTop="4dip"
+            android:contentDescription="@string/image_content_description"
+            android:src="@drawable/avatar_male_middle"
+            app:roundHeight="10.0dip"
+            app:roundWidth="10.0dip" />
+
+        <cmcc.mhealth.view.ScrollForeverTextView
+            android:id="@+id/textview_myrank_myname"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="16dip"
+            android:layout_toRightOf="@id/iamgeview_myrank_avater"
+            android:ellipsize="marquee"
+            android:singleLine="true"
+            android:textColor="@color/gold_I"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:id="@+id/mgr_stepshowingll"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textview_myrank_myname"
+            android:layout_below="@+id/textview_myrank_myname"
+            android:orientation="horizontal"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="5dp" >
+
+            <ImageView
+                android:id="@+id/imageview_foot"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:contentDescription="@string/image_content_description"
+                android:src="@drawable/his_titlebar_jiao" />
+
+            <TextView
+                android:id="@+id/textview_myStep"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="8"
+                android:text="10000步"
+                android:gravity="left"
+                android:textColor="@color/orange"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:id="@+id/imageview_horizonline"
+                android:layout_width="0dp"
+                android:layout_height="20dp"
+                android:layout_weight="1"
+                android:contentDescription="@string/image_content_description"
+                android:src="@drawable/list_history_line" />
+
+            <ImageView
+                android:id="@+id/imageview_aikon"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:contentDescription="@string/image_content_description"
+                android:src="@drawable/imageview_activitydetails_avg" />
+
+            <TextView
+                android:id="@+id/textview_myrank_id"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="8"
+                android:text="第1000名"
+                android:gravity="left"
+                android:textColor="@color/orange"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

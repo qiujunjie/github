@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/cmcc.mhealth"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <cmcc.mhealth.view.XListView
+        android:id="@+id/lr_listview_race"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/sample_background"
+        android:divider="@null"
+        android:cacheColorHint="@color/transparent"
+        android:fastScrollEnabled="true" >
+    </cmcc.mhealth.view.XListView>
+
+</LinearLayout>

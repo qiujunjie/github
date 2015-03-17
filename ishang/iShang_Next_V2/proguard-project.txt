@@ -1,0 +1,285 @@
+# To enable ProGuard in your project, edit project.properties
+# to define the proguard.config property as described in that file.
+#
+# Add project specific ProGuard rules here.
+# By default, the flags in this file are appended to flags specified
+# in ${sdk.dir}/tools/proguard/proguard-android.txt
+# You can edit the include path and order by changing the ProGuard
+# include property in project.properties.
+#
+# For more details, see
+#   http://developer.android.com/guide/developing/tools/proguard.html
+
+# Add any project specific keep options here:
+
+# If your project uses WebView with JS, uncomment th# To enable ProGuard in your project, edit project.properties
+# to define the proguard.config property as described in that file.
+#
+# Add project specific ProGuard rules here.
+# By default, the flags in this file are appended to flags specified
+# in ${sdk.dir}/tools/proguard/proguard-android.txt
+# You can edit the include path and order by changing the ProGuard
+# include property in project.properties.
+#
+# For more details, see
+#   http://developer.android.com/guide/developing/tools/proguard.html
+
+# Add any project specific keep options here:
+
+# If your project uses WebView with JS, uncomment the following
+# and specify the fully qualified class name to the JavaScript interface
+# class:
+#-keepclassmembers class fqcn.of.javascript.interface.for.webview {
+#   public *;
+#}
+-keepattributes Signature
+
+# ---------start--------
+# 	-----------友盟分享
+#-libraryjars libs/SocialSDK_QQZone_1.jar
+#-libraryjars libs/SocialSDK_QQZone_2.jar
+#-libraryjars libs/SocialSDK_QQZone_3.jar
+#-libraryjars libs/SocialSDK_WeiXin_1.jar
+#-libraryjars libs/SocialSDK_WeiXin_2.jar
+#-libraryjars libs/SocialSDK_Sina.jar
+# 所有腾讯class文件不混淆
+-dontwarn com.tencent.**
+-keep class com.tencent.** {*;}
+
+# 友盟统计
+#-libraryjars libs/umeng-analytics-v5.2.4.jar
+#友盟 SDK
+#-libraryjars libs/umeng_social_sdk_4.2.1.jar
+-dontwarn com.umeng.**
+-keep class com.umeng.** {*;}
+
+# ---------end--------
+
+
+# ---------start--------
+# ---------二维码--------
+#-libraryjars libs/android-integration-3.1.0.jar
+-dontwarn com.tencent.**
+-keep class com.tencent.** {*;}
+# ---------end--------
+
+# ---------start--------
+# ---------Apache网络请求--------
+#-libraryjars libs/httpmime-4.1.3.jar
+-dontwarn org.apache.http.entity.mime.**
+-keep class org.apache.http.entity.mime.** {*;}
+# ---------end--------
+
+# ---------start--------
+# ---------群聊修改dns--------
+#-libraryjars libs/dnsjava-2.1.6.jar
+-dontwarn org.xbill.DNS.**
+-keep class org.xbill.DNS.** {*;}
+# ---------end--------
+
+# ---------start--------
+# ---------群聊asmack--------
+#-libraryjars libs/asmack-android-8-4.0.2.jar
+-dontwarn org.jivesoftware.smack.**
+-keep class org.jivesoftware.smack.** {*;}
+
+-dontwarn org.apache.harmony.javax.security.**
+-keep class org.apache.harmony.javax.security.** {*;}
+
+-dontwarn org.apache.qpid.management.common.sasl.**
+-keep class org.apache.qpid.management.common.sasl.** {*;}
+
+-dontwarn de.measite.smack.**
+-keep class de.measite.smack.** {*;}
+
+-dontwarn com.novell.sasl.client.**
+-keep class com.novell.sasl.client.** {*;}
+# ---------end--------
+
+# ---------start--------
+# ---------个推服务--------
+#-libraryjars libs/GetuiSdk2.2.5.9.jar
+-dontwarn com.igexin.**
+-keep class com.igexin.** {*;}
+# ---------end--------
+
+# ---------start--------
+# ---------core--------
+#-libraryjars libs/core-3.1.0.jar
+-dontwarn com.google.zxing.**
+-keep class com.google.zxing.** {*;}
+# ---------end--------
+
+# ---------start--------
+# ---------群聊asmack--------
+#-libraryjars libs/GetuiSdk2.2.5.9.jar
+-dontwarn com.igexin.**
+-keep class com.igexin.**{*;}
+# ---------end--------
+
+# ---------start--------
+# ---------crash统计--------
+#-libraryjars libs/crashlytics.jar
+-dontwarn com.crashlytics.android.**
+-keep class com.crashlytics.android.** {*;}
+# ---------end--------
+
+# ---------start--------
+# ---------baidu定位--------
+#-libraryjars libs/locSDK_4.2.jar
+-dontwarn com.baidu.location.**
+-keep class com.baidu.location.** {*;}
+# ---------end--------
+
+# ---------start--------
+#-libraryjars ../android-support/bin/androidsupport.jar
+-dontwarn de.greenrobot.**
+-keep class de.greenrobot.** {*;}
+# ---------end--------
+
+# ---------start--------
+# ---------imageloader--------
+-libraryjars ../android-support/libs/universal-image-loader-1.9.3.jar
+-libraryjars ../android-support/libs/nineoldandroids-2.4.0.jar
+-libraryjars ../android-support/libs/android-support-v7-recyclerview.jar
+-libraryjars ../android-support/libs/zip4j_1.3.2.jar
+-libraryjars ../android-support/libs/stickylistheaders_lib.jar
+-libraryjars ../android-support/libs/android-support-v7-appcompat.jar
+-libraryjars ../android-support/libs/android-support-v4.jar
+# ---------end--------
+
+# ---------start--------
+# 枚举类不能去混淆
+-keepclassmembers enum * {                               
+     public *;
+}
+
+# EventBus onEvent方法不能混淆
+-keepclassmembers class ** {
+    public void onEvent(**);
+}
+
+
+# ---------end--------
+
+
+-dontwarn android.support.v4.**
+-dontwarn android.support.v7.**
+-keep class android.support.v4.** {*;}
+-keep class android.support.v7.** {*;}
+
+#-dontwarn com.google.gson.**
+#-keep com.google.gson.** {*;}
+
+#-dontwarn com.nineoldandroids.**
+#-dontwarn com.emilsjolander.components.stickylistheaders.**
+#-dontwarn android.webkit.WebView
+#-dontwarn sun.net.spi.nameservice.NameService
+#-dontwarn org.xbill.DNS.spi.DNSJavaNameServiceDescriptor
+
+# --start 全部文件不混淆
+#-keep class com.eduu.bang.* {*;}
+#-keep class com.eduu.bang.model.* {*;}
+#-keep class com.eduu.bang.app.* {*;}
+#-end
+
+#-keep com.nineoldandroids.** {*;}
+#-keep com.emilsjolander.components.stickylistheaders.** {*;}
+
+# This dnsjava class uses old Sun API
+
+# See http://stackoverflow.com/questions/5701126, happens in dnsjava
+-optimizations !code/allocation/variable
+
+
+#-dontshrink
+#-dontoptimize
+#-dontwarn com.google.android.maps.**
+#-dontwarn android.webkit.WebView
+#-dontwarn com.umeng.**
+#-dontwarn com.tencent.weibo.sdk.**
+#-dontwarn com.facebook.**
+#-keep enum com.facebook.**
+#-keepattributes Exceptions,InnerClasses,Signature
+#-keepattributes *Annotation*
+#-keepattributes SourceFile,LineNumberTable
+#
+#-keep public interface com.facebook.**
+#-keep public interface com.tencent.**
+#-keep public interface com.umeng.socialize.**
+#-keep public interface com.umeng.socialize.sensor.**
+#-keep public interface com.umeng.scrshot.**
+#
+#-keep public class com.umeng.socialize.* {*;}
+#-keep public class javax.**
+#-keep public class android.webkit.**
+#
+#-keep class com.facebook.**
+#-keep class com.umeng.scrshot.**
+#-keep public class com.tencent.** {*;}
+#-keep class com.umeng.socialize.sensor.**
+#
+#-keep class com.tencent.mm.sdk.modelmsg.WXMediaMessage {*;}
+#
+#-keep class com.tencent.mm.sdk.modelmsg.** implements com.tencent.mm.sdk.modelmsg.WXMediaMessage$IMediaObject {*;}
+#
+#-keep class im.yixin.sdk.api.YXMessage {*;}
+#-keep class im.yixin.sdk.api.** implements im.yixin.sdk.api.YXMessage$YXMessageData{*;}
+#
+#-keep public class [your_pkg].R$*{
+#    public static final int *;
+#}
+e following
+# and specify the fully qualified class name to the JavaScript interface
+# class:
+#-keepclassmembers class fqcn.of.javascript.interface.for.webview {
+#   public *;
+#}
+-keepattributes Signature
+
+-libraryjars /libs/umeng_sdk.jar
+-libraryjars /libs/umeng_social_sdk.jar
+-libraryjars /libs/libGoogleAnalyticsV2.jar
+-libraryjars /libs/libammsdk.jar
+-libraryjars /libs/pinyin4j-2.5.0.jar
+-libraryjars /lib/gson-2.2.3.jar
+
+-dontwarn com.umeng.**
+-dontwarn com.google.android.maps.**
+-dontwarn android.support.v4.**
+-dontwarn org.apache.**
+-dontwarn net.sourceforge.**
+-dontwarn demo.**
+
+-keep class com.umeng.** {*;}
+
+-keep class android.support.v4.** {*;}
+
+-keep class cmcc.mhealth.* {*;}
+-keep class cmcc.mhealth.bean.* {*;}
+-keep class cmcc.mhealth.domain.* {*;}
+-keep class cmcc.mhealth.net.* {*;}
+-keep class net.sourceforge.** {*;}
+-keep public class * extends android.support.v4.** 
+-keep public class * extends android.app.Fragment
+
+-keep class sun.** {*;}  
+-keep class com.** {*;}  
+-keep class org.** {*;} 
+-keep class com.tencent.mm.sdk.openapi.WXMediaMessage {*;}
+-keep class com.tencent.mm.sdk.openapi.** implements com.tencent.mm.sdk.openapi.WXMediaMessage$IMediaObject {*;}
+
+-keep class cmcc.mhealth.activity.WebViewActivity{
+public void aMessage(java.lang.String);
+public void finsh();
+}
+-keepclassmembers class * { 
+public <init>(org.json.JSONObject); 
+} 
+-keep public class cmcc.mhealth.R$*{ public static final int *; }
+-keep public class com.umeng.fb.ui.ThreadView { }
+
+-keep class com.baidu.mapapi.** {*;}
+
+-dontwarn cn.jpush.**
+-keep class cn.jpush.** { *; }

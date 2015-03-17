@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linearLayout_menu_item"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/menu_list_bg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/rel_bg_menu_item"
+        android:layout_width="fill_parent"
+        android:layout_height="38dp" >
+
+        <ImageView
+            android:id="@+id/simple_list_image"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:maxHeight="30dp"
+            android:maxWidth="30dp"
+            android:src="@drawable/slidingmenu_1" />
+
+        <TextView
+            android:id="@+id/simple_list_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@id/simple_list_image"
+            android:text="qwedfqwer"
+            android:textColor="@color/menu_gray"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/img_slidingmenu_right"
+            style="@style/rank_setting_more"
+            android:layout_marginRight="20dp"
+            android:contentDescription="@string/image_content_description"
+            android:src="@drawable/slidingmenu_right" />
+
+        <TextView
+            android:id="@+id/simple_list_message_tip"
+            android:layout_width="23dp"
+            android:layout_height="23dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/simple_list_text"
+            android:background="@drawable/message_num_tip"
+            android:gravity="center"
+            android:text="10"  
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</LinearLayout>

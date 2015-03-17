@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <!-- 最后一项，则下面两个角为圆角 -->
+     <gradient
+        android:angle="270"
+        android:endColor="#FFDAB9"
+        android:startColor="#FF7F24" /> 
+
+    <corners
+        android:bottomLeftRadius="4dip"
+        android:bottomRightRadius="4dip" />
+
+</shape>

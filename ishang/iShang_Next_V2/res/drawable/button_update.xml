@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:layout_width="50dp"
+        android:layout_height="25dp"
+        android:drawable="@drawable/title_update"
+        android:state_pressed="false"/>
+    <item
+        android:layout_width="50dp"
+        android:layout_height="25dp"
+        android:drawable="@drawable/title_update"
+        android:state_pressed="true"/>
+    <item android:drawable="@drawable/title_update"/>
+
+</animation-list>

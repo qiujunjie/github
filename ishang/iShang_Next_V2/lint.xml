@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lint>
+    <issue id="HandlerLeak">
+        <ignore path="src\cmcc\mhealth\activity\MapListGPSFragment.java" />
+        <ignore path="src\cmcc\mhealth\activity\MapStartRunningFragment.java" />
+        <ignore path="src\cmcc\mhealth\activity\MapViewOrbitFragment.java" />
+        <ignore path="src\cmcc\mhealth\activity\SettingWeightActivity.java" />
+        <ignore path="src\cmcc\mhealth\slidingcontrol\MainCenterActivity.java" />
+    </issue>
+    <issue id="NewApi" severity="ignore" />
+    <issue id="ResourceAsColor">
+        <ignore path="src\cmcc\mhealth\activity\SettingBirthdayActivity.java" />
+        <ignore path="src\cmcc\mhealth\slidingcontrol\WeightFragment.java" />
+    </issue>
+    <issue id="SetJavaScriptEnabled">
+        <ignore path="src\cmcc\mhealth\slidingcontrol\WebViewFragment.java" />
+    </issue>
+    <issue id="ShowToast">
+        <ignore path="src\cmcc\mhealth\slidingcontrol\MainCenterActivity.java" />
+    </issue>
+    <issue id="SimpleDateFormat">
+        <ignore path="src\cmcc\mhealth\common\Common.java" />
+        <ignore path="src\cmcc\mhealth\view\MyWheelView.java" />
+    </issue>
+    <issue id="ValidFragment">
+        <ignore path="src\cmcc\mhealth\slidingcontrol\CampaignFragment.java" />
+        <ignore path="src\cmcc\mhealth\slidingcontrol\ListSportsHistoryFragment.java" />
+        <ignore path="src\cmcc\mhealth\slidingcontrol\PedoBriefFragment.java" />
+        <ignore path="src\cmcc\mhealth\slidingcontrol\RaceListFragment.java" />
+        <ignore path="src\cmcc\mhealth\slidingcontrol\RankFragment.java" />
+        <ignore path="src\cmcc\mhealth\slidingcontrol\SettingFragment.java" />
+        <ignore path="src\cmcc\mhealth\slidingcontrol\WebViewFragment.java" />
+    </issue>
+</lint>

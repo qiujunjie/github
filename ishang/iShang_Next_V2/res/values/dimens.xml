@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+
+    <dimen name="button_height">20.0dip</dimen>
+    <dimen name="bottom_tab_font_size">12.0dip</dimen>
+    <dimen name="bottom_tab_padding_up">0.0dip</dimen>
+    <dimen name="bottom_tab_padding_drawable">0.0dip</dimen>
+    <dimen name="switch_logo_bottom_padding">30.0sp</dimen>
+    <dimen name="widget_height">100.0dip</dimen>
+    <dimen name="sta_height">48.0dip</dimen>
+    <dimen name="widget_write_margin_top">19.0dip</dimen>
+    <dimen name="widget_write_margin_left">10.0dip</dimen>
+    <dimen name="widget_content_margin_top">20.0dip</dimen>
+    <dimen name="widget_content_margin_left">10.0dip</dimen>
+    <dimen name="widget_logo_size">35.0dip</dimen>
+    <dimen name="title_height">74.0dip</dimen>
+    <dimen name="new_blog_size">70.0dip</dimen>
+    <dimen name="racecontent_item_runstep_text">20sp</dimen>
+    <dimen name="slidingmenu_offset">60dp</dimen>
+    <dimen name="list_padding">10dp</dimen>
+    <dimen name="shadow_width">15dp</dimen>
+
+    <integer name="num_cols">1</integer>
+	<dimen name="size_1">20sp</dimen>
+	<dimen name="margin_left_1">20dp</dimen>
+	<dimen name="margin_top_as_bom">5dp</dimen>
+	
+	<dimen name="achartengine_height">270dp</dimen><!-- 图表控件高度 -->
+	<dimen name="menu_name_size">18sp</dimen><!--menu 名字的字体大小  -->
+	<dimen name="weight_acharview_height">200dp</dimen><!--体重控件的高度  -->
+	
+	<dimen name="text_size_running_date">30sp</dimen><!--体重控件的高度  -->
+	<dimen name="height_running_center">60dp</dimen><!--正在运动界面的中心圆高度  -->
+	<dimen name="map_list_width_blue">230dp</dimen><!--\ -->
+	<dimen name="map_list_height_blue">80dp</dimen><!--\ -->
+</resources>

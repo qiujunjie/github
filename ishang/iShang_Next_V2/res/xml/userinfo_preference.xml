@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- preference的组织方式有PreferenceScreen和PreferenceCategory，PreferenceCategory是带层次组织关系，在后面的例子体验，而PreferenceScreen就是最平白和基础的方式 -->
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/background" >
+
+    <PreferenceCategory
+        android:layout="@layout/title_menu"
+        android:title="用户信息" >
+        <EditTextPreference
+            android:defaultValue="13121237554"
+            android:enabled="true"
+            android:key="@string/phonenumkey"
+            android:layout="@layout/custom_preference"
+            android:title="@string/phonenum_title" />
+        <EditTextPreference
+            android:defaultValue="123456"
+            android:enabled="true"
+            android:key="@string/passwordkey"
+            android:layout="@layout/custom_preference"
+            android:title="@string/password_title" />
+        <EditTextPreference
+            android:defaultValue="3"
+            android:enabled="true"
+            android:key="@string/update_day_key"
+            android:layout="@layout/custom_preference"
+            android:title="@string/update_day_title" />
+        <EditTextPreference
+            android:defaultValue="1000"
+            android:enabled="true"
+            android:key="@string/sport_plan"
+            android:layout="@layout/custom_preference"
+            android:title="@string/sport_plan_title" />
+    </PreferenceCategory>
+
+</PreferenceScreen>

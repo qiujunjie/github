@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="8dip"
+    android:layout_marginRight="8dip" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout_popwindow_bg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="8dip"
+        android:layout_marginRight="8dip"
+        android:background="@color/transparent"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/button_photo"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dip"
+            android:background="@drawable/select_weixin_button"
+            android:text="相册选择" />
+
+        <Button
+            android:id="@+id/is_adv_button"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dip"
+            android:background="@drawable/select_weixin_button"
+            android:text="拍照" />
+
+        <Button
+            android:id="@+id/sliding_dlog_cancel"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/select_weixin_button"
+            android:text="取消" />
+    </LinearLayout>
+
+</RelativeLayout>

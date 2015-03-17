@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:title="@string/setting" >
+    <PreferenceCategory android:title="@string/update" >
+        <EditTextPreference
+            android:key="@string/deviceid"
+            android:summary="@string/deviceid_summary"
+            android:title="@string/deviceid_title" />
+       
+    </PreferenceCategory>
+   <PreferenceCategory android:title="@string/other" >
+
+        <EditTextPreference
+            android:key="@string/name"
+            android:summary="@string/name_summary"
+            android:title="@string/name_title" />
+        <EditTextPreference
+            android:key="@string/weight"
+            android:summary="@string/weight_summary"
+            android:title="@string/weight_title" />
+        <EditTextPreference
+            android:key="@string/stride"
+            android:summary="@string/stride_summary"
+            android:title="@string/stride_title" />
+    </PreferenceCategory>
+</PreferenceScreen>

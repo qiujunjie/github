@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@android:id/tabhost"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="fill_parent"
+            android:layout_height="0.0dip"
+            android:layout_weight="1.0"
+            android:background="@drawable/background" />
+
+        <TabWidget
+            android:id="@android:id/tabs"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.0"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/main_tab_group"
+            android:layout_width="fill_parent"
+            android:layout_height="53dp"
+            android:layout_gravity="bottom"
+            android:background="@drawable/menu_bg"
+            android:baselineAligned="false"
+            android:gravity="bottom"
+            android:orientation="horizontal"
+            android:paddingBottom="5dp" >
+
+            <FrameLayout
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:background="@null" >
+
+                <LinearLayout
+                    android:id="@+id/main_layout_addExam"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="bottom|center" >
+
+                    <RadioButton
+                        android:id="@+id/radio_button0"
+                        style="@style/MMTabButton"
+                        android:background="@drawable/home_btn_bg_brief"
+                        android:tag="radio_button0" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="top|right|center"
+                    android:paddingRight="10.0dip" >
+
+                    <TextView
+                        android:id="@+id/main_tab_unread_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/unread_functions"
+                        android:gravity="center"
+                        android:text=""
+                        android:textColor="#ffffff"
+                        android:textSize="10.0dip"
+                        android:visibility="invisible" />
+                </LinearLayout>
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:background="@null" >
+
+                <LinearLayout
+                    android:id="@+id/main_layout_myExam"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="bottom|center" >
+
+                    <RadioButton
+                        android:id="@+id/radio_button1"
+                        style="@style/MMTabButton"
+                        android:background="@drawable/home_btn_bg_history"
+                        android:tag="radio_button1" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="top|right|center"
+                    android:paddingRight="10.0dip" >
+
+                    <TextView
+                        android:id="@+id/main_tab_address"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/unread_functions"
+                        android:gravity="center"
+                        android:text=""
+                        android:textColor="#ffffff"
+                        android:textSize="10.0dip"
+                        android:visibility="invisible" />
+                </LinearLayout>
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:background="@null" >
+
+                <LinearLayout
+                    android:id="@+id/main_layout_message"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="bottom|center" >
+
+                    <RadioButton
+                        android:id="@+id/radio_button2"
+                        style="@style/MMTabButton"
+                        android:background="@drawable/home_btn_bg_group"
+                        android:tag="radio_button2" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="top|right|center"
+                    android:paddingRight="10.0dip" >
+
+                    <TextView
+                        android:id="@+id/main_tab_group_new_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/unread_functions"
+                        android:gravity="center"
+                        android:text=""
+                        android:textColor="#ffffff"
+                        android:textSize="12.0dip"
+                        android:visibility="invisible" />
+                </LinearLayout>
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:background="@null" >
+
+                <LinearLayout
+                    android:id="@+id/main_layout_activity"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="bottom|center" >
+
+                    <RadioButton
+                        android:id="@+id/radio_button3"
+                        style="@style/MMTabButton"
+                        android:background="@drawable/tab_activity_bg"
+                        android:tag="radio_button3" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="top|right|center"
+                    android:paddingRight="10.0dip" >
+
+                    <TextView
+                        android:id="@+id/main_tab_activity_new_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/unread_functions"
+                        android:gravity="center"
+                        android:paddingLeft="6.0dip"
+                        android:paddingRight="6.0dip"
+                        android:text=""
+                        android:textColor="#ffffff"
+                        android:textSize="10.0dip"
+                        android:visibility="invisible" />
+                </LinearLayout>
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:background="@null" >
+
+                <LinearLayout
+                    android:id="@+id/main_layout_settings"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="bottom|center" >
+
+                    <RadioButton
+                        android:id="@+id/radio_button4"
+                        style="@style/MMTabButton"
+                        android:background="@drawable/home_btn_bg_setting"
+                        android:tag="radio_button4" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="top|right|center"
+                    android:paddingRight="10.0dip" >
+
+                    <TextView
+                        android:id="@+id/main_tab_setting_new_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/unread_functions"
+                        android:gravity="center"
+                        android:paddingLeft="6.0dip"
+                        android:paddingRight="6.0dip"
+                        android:text=""
+                        android:textColor="#ffffff"
+                        android:textSize="10.0dip"
+                        android:visibility="invisible" />
+                </LinearLayout>
+            </FrameLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</TabHost>

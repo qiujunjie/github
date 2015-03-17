@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linearLayout_menu_item"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/menu_list_bg"
+    android:orientation="horizontal" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="40dp" >
+
+        <TextView
+            android:id="@+id/textview_company"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:text="子选项"
+            android:textColor="@color/menu_gray"
+            android:textSize="20sp" />
+
+        <ImageView
+            style="@style/rank_setting_more"
+            android:layout_marginRight="20dp"
+            android:contentDescription="@string/image_content_description"
+            android:src="@drawable/slidingmenu_right"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+</LinearLayout>

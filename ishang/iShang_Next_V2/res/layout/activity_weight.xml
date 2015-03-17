@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/sample_background"
+    android:orientation="vertical" >
+
+    <cmcc.mhealth.view.QScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dip"
+                android:layout_marginTop="8dip"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/textview_weight_about"
+                    android:textColor="@color/font_title"
+                    android:textSize="16sp"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/tv_reflesh_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|bottom"
+                    android:layout_marginLeft="80dp"
+                    android:text="@string/brief_textview_updatetime"
+                    android:textColor="#7e7e7e"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="60dp"
+                android:gravity="bottom" >
+
+                <RelativeLayout
+                    android:id="@+id/forid_relativelayout_weight_about"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="8dip"
+                    android:background="@drawable/weight_top_round"
+                    android:gravity="center_horizontal|center_vertical" >
+
+                    <LinearLayout
+                        android:id="@+id/linearLayout_weight"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true" >
+
+                        <TextView
+                            android:id="@+id/textview_overloads"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="--"
+                            android:textColor="@color/white"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="kg"
+                            android:textColor="@color/white"
+                            android:textSize="10sp" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/text_bmi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/linearLayout_weight"
+                        android:layout_marginLeft="8dip"
+                        android:layout_marginTop="8dip"
+                        android:text="目标"
+                        android:textColor="@color/white"
+                        android:textSize="12sp" />
+
+                    <View
+                        android:layout_width="wrap_content"
+                        android:layout_height="1dp"
+                        android:layout_centerInParent="true"
+                        android:layout_margin="2dip"
+                        android:background="@color/gold" />
+
+                    <TextView
+                        android:id="@+id/target_weight"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/linearLayout_weight"
+                        android:layout_marginTop="8dip"
+                        android:layout_toRightOf="@id/text_bmi"
+                        android:text="65"
+                        android:textColor="@color/white"
+                        android:textSize="13sp" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearLayout1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dip"
+                    android:layout_marginRight="8dip"
+                    android:layout_marginTop="20dip"
+                    android:layout_toRightOf="@id/forid_relativelayout_weight_about"
+                    android:orientation="horizontal" >
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="25dp"
+                        android:layout_weight="2.5"
+                        android:background="@color/weight_blue"
+                        android:gravity="center_vertical" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:text="18.5"
+                            android:textColor="@color/white" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="25dp"
+                        android:layout_weight="5.5"
+                        android:background="@color/weight_green"
+                        android:gravity="center_vertical" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:text="24"
+                            android:textColor="@color/white" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="25dp"
+                        android:layout_weight="3.0"
+                        android:background="@color/org_II"
+                        android:gravity="center_vertical" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:text="27"
+                            android:textColor="@color/white" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="25dp"
+                        android:layout_weight="2.0"
+                        android:background="@color/org_III"
+                        android:gravity="center_vertical" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:text="29"
+                            android:textColor="@color/white" />
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="25dp"
+                        android:layout_weight="2"
+                        android:background="@color/org_IIII" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="8dip"
+                    android:layout_toRightOf="@id/forid_relativelayout_weight_about"
+                    android:gravity="center" >
+
+                    <TextView
+                        style="@style/textstyle_weightDetails"
+                        android:layout_width="0dp"
+                        android:layout_weight="2.5"
+                        android:text="偏瘦"
+                        android:textColor="#7e7e7e" />
+
+                    <TextView
+                        style="@style/textstyle_weightDetails"
+                        android:layout_width="0dp"
+                        android:layout_weight="5.5"
+                        android:text="正常"
+                        android:textColor="#7e7e7e" />
+
+                    <TextView
+                        style="@style/textstyle_weightDetails"
+                        android:layout_width="0dp"
+                        android:layout_weight="3"
+                        android:text="偏胖"
+                        android:textColor="#7e7e7e" />
+
+                    <TextView
+                        style="@style/textstyle_weightDetails"
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:text="肥胖"
+                        android:textColor="#7e7e7e" />
+
+                    <TextView
+                        style="@style/textstyle_weightDetails"
+                        android:layout_width="0dp"
+                        android:layout_weight="3"
+                        android:text="重度肥胖"
+                        android:textColor="#7e7e7e" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_bmi_director"
+                    android:layout_width="fill_parent"
+                    android:layout_height="30dp"
+                    android:layout_alignLeft="@+id/linearLayout1"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignRight="@+id/linearLayout1" >
+
+                    <TextView
+                        android:id="@+id/tv_bmi_director"
+                        android:layout_width="30dp"
+                        android:layout_height="20dp"
+                        android:background="@drawable/tip_weight"
+                        android:gravity="center"
+                        android:text="18"
+                        android:textColor="#ffffff" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/tv_bmi_ruleview"
+                android:layout_width="fill_parent"
+                android:layout_height="100dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/bf4" >
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dip"
+                android:layout_marginLeft="5dip"
+                android:layout_marginRight="5dip"
+                android:layout_marginTop="8dip"
+                android:src="@drawable/activitydetails_driver_line" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/textview_weight_record"
+                    android:textColor="@color/font_title"
+                    android:textSize="16sp" />
+
+                <RadioGroup
+                    android:id="@+id/rg_weight_switcher"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="8.0dip"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        android:id="@+id/rb_weight_switch1"
+                        android:layout_width="60dp"
+                        android:layout_height="20dp"
+                        android:background="@drawable/radio_weight"
+                        android:button="@null"
+                        android:checked="true"
+                        android:gravity="center"
+                        android:text="@string/textview_30today"
+                        android:textColor="@color/font_title"
+                        android:textSize="12sp" />
+
+                    <RadioButton
+                        android:id="@+id/rb_weight_switch2"
+                        android:layout_width="60dp"
+                        android:layout_height="20dp"
+                        android:background="@drawable/radio_weight"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:text="@string/textview_sixty_days"
+                        android:textColor="@color/font_title"
+                        android:textSize="12sp" />
+
+                    <RadioButton
+                        android:id="@+id/rb_weight_switch3"
+                        android:layout_width="60dp"
+                        android:layout_height="20dp"
+                        android:background="@drawable/radio_weight"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:text="@string/textview_half_year"
+                        android:textColor="@color/font_title"
+                        android:textSize="12sp" />
+
+                    <RadioButton
+                        android:id="@+id/rb_weight_switch4"
+                        android:layout_width="60dp"
+                        android:layout_height="20dp"
+                        android:background="@drawable/radio_weight"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:text="@string/textview_one_year"
+                        android:textColor="@color/font_title"
+                        android:textSize="12sp" />
+                </RadioGroup>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/acharView"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/weight_acharview_height"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@null"
+                android:clickable="false" >
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dip"
+                android:layout_marginBottom="8dip"
+                android:layout_marginTop="16dip"
+                android:src="@drawable/activitydetails_driver_line"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/textview_weight_record"
+                    android:textColor="@color/font_title"
+                    android:textSize="16sp"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|bottom"
+                    android:layout_marginLeft="16dip"
+                    android:text="@string/brief_textview_updatetime"
+                    android:textColor="#000000"
+                    android:textSize="13sp" />
+
+                <Button
+                    android:layout_width="60dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="8dip"
+                    android:background="@color/green"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="@string/textview_weight_edit"
+                    android:textColor="@color/font_title"
+                    android:textSize="14sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </cmcc.mhealth.view.QScrollView>
+
+</LinearLayout>

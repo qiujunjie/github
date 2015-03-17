@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/cmcc.mhealth"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/linearlayout_menu_imbg"
+        android:layout_width="fill_parent"
+        android:layout_height="110dp"
+        android:background="@drawable/slidingmenu_top_bg" >
+
+        <RelativeLayout
+            android:id="@+id/rel_top"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true" >
+
+            <LinearLayout
+                android:id="@+id/linearlayout_null"
+                android:layout_width="110dp"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="10dp"
+                android:orientation="horizontal" >
+
+                <cmcc.mhealth.view.CircleImageView
+                    android:id="@+id/slidingmenu_avater"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_margin="10dp"
+                    android:contentDescription="@string/image_content_description" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/slidingmenu_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/linearlayout_null"
+                android:textColor="@color/black"
+                android:textSize="@dimen/menu_name_size" />
+
+            <Button
+                android:id="@+id/button_setting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"
+                android:background="@null"
+                android:drawableLeft="@drawable/button_setting"
+                android:text="设置" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="2dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/org_IIII" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <ListView
+        android:id="@android:id/list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/exit_divider"
+        android:layout_below="@+id/linearlayout_menu_imbg"
+        android:background="@drawable/background"
+        android:divider="@drawable/dotted_line_histogram"
+        android:dividerHeight="1dp"
+        android:fadingEdgeLength="0dp"
+        android:groupIndicator="@null" />
+
+    <ImageView
+        android:id="@+id/exit_divider"
+        android:layout_width="fill_parent"
+        android:layout_height="3dp"
+        android:scaleY="4"
+        android:layout_above="@+id/menu_bottom_item"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/background"
+        android:src="@drawable/dotted_line_histogram" />
+
+    <RelativeLayout
+        android:id="@+id/menu_bottom_item"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/menu_list_exit_bg" >
+
+        <ImageView
+            android:id="@+id/menu_bottom_image_exit"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:maxHeight="30dp"
+            android:maxWidth="30dp"
+            android:src="@drawable/menu_exit" />
+
+        <TextView
+            android:id="@+id/menu_bottom_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@id/menu_bottom_image_exit"
+            android:text="退出"
+            android:textColor="@color/menu_gray"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

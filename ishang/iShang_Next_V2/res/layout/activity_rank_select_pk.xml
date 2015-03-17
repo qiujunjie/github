@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/cmcc.mhealth"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/sample_background"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/linearLayout_result_title"
+        android:layout_width="fill_parent"
+        android:layout_height="54dp"
+        android:background="@drawable/title_bg2" >
+
+        <ImageButton
+            android:id="@+id/button_input_bg_back"
+            android:layout_width="54dip"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/my_button_back"
+            android:contentDescription="@string/image_content_description" />
+
+        <RadioGroup
+            android:id="@+id/radio_title_right"
+            android:layout_width="80dp"
+            android:layout_height="54dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/bg_rank_radio"
+            android:contentDescription="@null"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/radio_yestoday"
+                android:layout_width="40dp"
+                android:layout_height="54dp"
+                android:background="@drawable/rank_radio_step"
+                android:button="@null"
+                android:checked="true"
+                android:gravity="center"
+                android:text="@string/rank_textview_1day"
+                android:textColor="@drawable/brief_radio_text_color"
+                android:textSize="12sp" />
+
+            <RadioButton
+                android:id="@+id/radio_7day"
+                android:layout_width="40dp"
+                android:layout_height="54dp"
+                android:background="@drawable/rank_radio_step_right"
+                android:button="@null"
+                android:gravity="center"
+                android:text="@string/rank_textview_7day"
+                android:textColor="@drawable/brief_radio_text_color"
+                android:textSize="12sp" />
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="150dip"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:ellipsize="marquee"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+            android:text="组内排名"
+            android:textColor="#ffffff"
+            android:textSize="26sp" >
+        </TextView>
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textView_title_run_spk"
+            style="@style/rank_title"
+            android:layout_width="fill_parent"
+            android:layout_height="20dip"
+            android:background="#646464"
+            android:text="组名"
+            android:textColor="#f0f0f0" />
+
+        <TextView
+            android:id="@+id/textview_rankset_7time"
+            style="@style/rank_title"
+            android:layout_width="fill_parent"
+            android:layout_height="20dip"
+            android:background="#646464"
+            android:text="@string/textview_rankid"
+            android:textColor="#f0f0f0" 
+            tools:ignore="InefficientWeight" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <ListView
+            android:id="@+id/activity_rank_selectitempk"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:cacheColorHint="@color/white"
+            android:divider="@null" >
+        </ListView>
+
+        <RelativeLayout
+            android:id="@+id/activity_rank_rl_bf"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <LinearLayout
+                android:id="@+id/activity_rank_ll_face"
+                android:layout_width="270dp"
+                android:layout_height="270dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true" >
+
+                <cmcc.mhealth.view.RoundAngleImageView
+                    android:id="@+id/activity_rank_raiv_face"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    app:roundHeight="20.0dip"
+                    app:roundWidth="20.0dip" />
+            </LinearLayout>
+        </RelativeLayout>
+    </FrameLayout>
+
+</LinearLayout>

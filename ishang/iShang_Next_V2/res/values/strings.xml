@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Toast String -->
+    <string name="MESSAGE_LOGIN_SUCCESS">登录成功</string>
+    <string name="MESSAGE_LOGIN_FALSE">登录失败</string>
+    <string name="MESSAGE_PASSWORD_ERROE">用户名或密码错误</string>
+    <string name="MESSAGE_NOT_ACTIVITY">用户未激活,请先通过电脑激活</string>
+    <string name="MESSAGE_CUSTOMER_INFO_EXCEPTION">用户信息验证失败</string>
+    <string name="MESSAGE_PHONE_PASSWORD_EXCEPTION">手机号或密码不正确</string>
+    <string name="MESSAGE_PHONE_ERROR">请输入正确的手机号码</string>
+    <string name="MESSAGE_PHONE_ISEMPTY">账号为空</string>
+    <string name="MESSAGE_PASSWORD_ISEMPTY">密码为空</string>
+    <string name="MESSAGE_PASSWORD_ISTOOLEN">密码长度超过30个字符</string>
+    <string name="MESSAGE_PHONE_ISTOOLEN">账号长度超过30个字符</string>
+    <string name="MESSAGE_NO_PEDO_DETAIL">运动记录为空</string>
+    <string name="MESSAGE_SERVER_EXCEPTION">当前网络连接错误，请退出后检查网络</string>
+    <string name="MESSAGE_SERVER_EXCEPTION2">无此账号，请检查拼写</string>
+    <string name="MESSAGE_SERVER_EXCEPTION3">对同一手机号码每天最多请求3次短信验证码</string>
+    <string name="MESSAGE_INTERNET_NONE">当前没有网络,请查看网络设置</string>
+    <string name="MESSAGE_INTERNET_ERROE">网络异常</string>
+    <string name="MESSAGE_INTERNET_ERROR">网络访问出错，请稍后再试</string>
+    <string name="MESSAGE_UPDATE_SUCCESS">更新成功</string>
+    <string name="MESSAGE_UPDATE_FALSE">更新失败</string>
+    <string name="MESSAGE_UPDATED_VERSION">当前已经是最新版本</string>
+    <string name="MESSAGE_UPDATE_PWD_SUCCESS">修改成功</string>
+    <string name="MESSAGE_CROP_FAILED">获取失败请重新选择</string>
+    <string name="MESSAGE_AVARAR_SET_SUCCESS">头像设置完成</string>
+    <string name="MESSAGE_COMFIRM_FAIL">验证失败，请重试</string>
+    <string name="MESSAGE_COMFIRM_PLSINPUTCODE">请输入验证码</string>
+    <string name="MESSAGE_GET_SERVERLIST_FAILED">服务器暂时无法使用，请稍后再试</string>
+    
+    <string name="MESSAGE_UPLOAD_GPS_SUCCESS">数据上传成功</string>
+    <string name="MESSAGE_SYNCHRO_GPS_SUCCESS">数据同步成功</string>
+    <string name="MESSAGE_SYNCHRO_GPS_FAILED">数据同步成功</string>
+    <string name="MESSAGE_GPS_NODATA">您还没有数据，赶快开启运动吧！</string>
+    <string name="MESSAGE_UN_SAVE_DATA">数据未保存</string>
+    
+    <string name="xlistview_header_hint_normal">下拉刷新</string>
+    <string name="xlistview_header_hint_ready">松开刷新数据</string>
+    <string name="xlistview_header_hint_loading">正在加载...</string>
+    <string name="xlistview_header_last_time">上次更新时间：</string>
+    <string name="xlistview_footer_hint_normal">查看更多</string>
+    <string name="xlistview_footer_hint_ready">松开载入更多</string>
+    <string name="string_message_1">输入字符不合法</string>
+
+    <!-- Toast String -->
+
+    <string name="app_name">我尚运动</string>
+    <string name="login_title">登录</string>
+    <string name="pedometer_title">运动</string>
+    <string name="racelist_title">活动</string>
+    <string name="title_weight_manager">体重</string>
+    <string name="motio_title">运动类型</string>
+    <string name="friend_title">好友</string>
+    <string name="message_title">消息</string>
+    <string name="his_title">历史</string>
+    <string name="race_title">竞赛</string>
+    <string name="set_title">个人设置</string>
+    <string name="pedo_detail_title">运动详细</string>
+    <string name="record_mood_title">运动录入</string>
+    <string name="upload_info_title">上传记录</string>
+    <string name="brief_info">运动情况</string>
+    <string name="stepnum">步数</string>
+    <string name="stepnum_unit">步</string>
+    <string name="distance_unit">千米</string>
+    <string name="sports_info">运动状态</string>
+    <string name="main_result">简报</string>
+    <string name="main_input">录入</string>
+    <string name="main_info">历史</string>
+    <string name="main_setting">设置</string>
+    <string name="phonenum_title">手机号</string>
+    <string name="password_title">密 码</string>
+    <string name="sport_plan_title">日计划步数</string>
+    <string name="update_day_title">更新天数</string>
+    <string name="usernamekey">username</string>
+    <string name="update_day_key">update_day</string>
+    <string name="passwordkey">password</string>
+    <string name="firstnamekey">firstname</string>
+    <string name="lastnamekey">lastname</string>
+    <string name="phonenumkey">phonenum</string>
+    <string name="sport_plan">sport_plan</string>
+    <string name="update_data">更新数据</string>
+    <string name="string_menu_joker"></string>
+    <string name="fri_label_btn_call">馒头</string>
+    <string name="fri_label_btn_ta">米饭</string>
+    <string name="fri_label_btn_sms">汉堡</string>
+    <string name="new_progress">"计划进度: "</string>
+    <string name="hour24">24小时</string>
+    <string name="basicInfo">基本情况</string>
+    <string name="cal">千卡</string>
+    <string name="avtivity_detials_radiobutton_left">个人成绩</string>
+    <string name="avtivity_detials_radiobutton_right">群组成绩</string>
+    <string name="share_sina">新浪微博</string>
+    <string name="share_tencent">腾讯微博</string>
+    <string name="share_renren">人人网</string>
+    <string name="share_douban">豆瓣</string>
+    <string name="share_qzone">Qzone</string>
+    <string name="share_test">测试</string>
+    <string name="self_center">个人中心</string>
+    <!--
+<string name="website_http_qurey_adress">http://phr.cmri.cn/sport/openClientApi.do?action=</string>	
+<string name="website_http_qurey_avater_image">http://phr.cmri.cn/sport/UserAvatar/</string>
+    -->
+    <string name="website_http_qurey_adress">http://phr.cmri.cn/sport/openClientApi.do?action=</string>
+    <string name="website_http_qurey_avater_image">http://phr.cmri.cn/sport/UserAvatar/</string>
+    <!--
+<string name="website_http_qurey_adress">http://mhealth.cmri.cn/sport/openClientApi.do?action=</string>	
+<string name="website_http_qurey_avater_image">http://mhealth.cmri.cn/sport/UserAvatar/</string>
+    -->
+    <!--
+<string name="website_http_qurey_adress">http://10.1.5.191/sport/openClientApi.do?action=</string>	
+<string name="website_http_qurey_avater_image">http://10.1.5.191/sport/UserAvatar/</string>
+    -->
+    <!--
+<string name="website_http_qurey_adress">http://218.206.179.71/jk/openClientApi.do?action=</string>	
+<string name="website_http_qurey_avater_image">http://218.206.179.71/jk/UserAvatar/</string>
+    -->
+    <!-- <string name="website_http_qurey_adress">http://218.206.179.193/CmccPhr/openClientApi.do?action=</string> -->
+    <!-- <string name="website_http_qurey_avater_image">http://218.206.179.193/CmccPhr/UserAvatar/</string> -->
+    <string name="brief_textview_updatetime">刷新时间</string>
+    <string name="brief_textview_runrecord_text">运动情况</string>
+    <string name="brief_textview_moststep_text">最多步数:</string>
+    <string name="brief_textview_time_text">日期:</string>
+    <string name="brief_textview_moscal_text">最多消耗热量：</string>
+    <string name="brief_textview_step_text">步数</string>
+    <string name="brief_textview_minute_text">分钟</string>
+    <string name="rank_textview_7day">七日</string>
+    <string name="rank_textview_1day">昨日</string>
+    <string name="brief_textview_clock_text">时间</string>
+    <string name="brief_textview_timelong_text">时长</string>
+    <string name="brief_textview_range_text">距离</string>
+    <string name="textview_today">当天</string>
+    <string name="textview_7today">7天</string>
+    <string name="textview_30today">30天</string>
+    <string name="calendar_choice_date">选择日期</string>
+    <string name="brief_textview_hhmm_text">hh:mm</string>
+    <string name="text_zeronum">0</string>
+    <string name="text_m">km</string>
+    <string name="image_content_description">is OK</string>
+    <string name="history_hot">热量(千卡)</string>
+    <string name="history_hot1">热量</string>
+    <string name="history_qianka">千卡</string>
+    <string name="history_uploadtime">上传时间</string>
+    <string name="face_image">我的头像</string>
+    <string name="telephonenumber">手机号码 :</string>
+    <string name="text_password">密 码 :</string>
+    <string name="text_login">登  录</string>
+    <string name="text_remember_password">记住密码</string>
+    <string name="textview_forgetpwd">忘记密码</string>
+    <string name="textview_autologin">自动登录</string>
+    <string name="textview_exercise_intensity">运动强度</string>
+    <string name="textview_exercise_step">运动步数</string>
+    <string name="textview_packname">文件名：iShang_V1.apk</string>
+    <string name="textview_daxiao">大小:</string>
+    <string name="textview_rankid">序号</string>
+    <string name="textview_race0">即将开始</string>
+    <string name="textivew_race1">已经开始</string>
+    <string name="textview_race2">我的竞赛</string>
+    <string name="textview_orgnize">个人排名</string>
+    <string name="textivew_member">班组排名</string>
+    <string name="textview_grouprank">组内排名</string>
+    <string name="textview_updatedate">更新数据</string>
+    <string name="textview_weight">体 重(kg)：</string>
+    <string name="textview_steplong">步 长(cm)：</string>
+    <string name="textview_mygroup">所 属  组：</string>
+    <string name="textview_runtarget">运动目标：</string>
+    <string name="textview_aboutapk">关于我尚运动</string>
+    <string name="textview_version">当前版本：</string>
+    <string name="textview_inspect_version">检查新版本</string>
+    <string name="textview_guid">新手导引</string>
+    <string name="textview_update_password">修 改 密 码</string>
+    <string name="textview_binddevice">绑定设备</string>
+    <string name="textview_tellfriend">告诉朋友</string>
+    <string name="textview_feedback">意见反馈</string>
+    <string name="textview_exit">注 销 登 录</string>
+    <string name="textview_input_rank_target">请输入运动目标</string>
+    <string name="textview_runtarget_describe">在这里您可以设置您每天的运动目标步数(单位：步)</string>
+    <string name="textview_save">保 存</string>
+    <string name="textview_input_newPassword">请输入新密码</string>
+    <string name="textview_inputAgain_newPassword">请再次输入新密码</string>
+    <string name="textview_twice_password">确认两次密码输入相同</string>
+    <string name="textview_sure_update">确 认 修 改</string>
+    <string name="textview_input_oldPassword">请输入原始密码</string>
+    <string name="textview_input_yourOlldPassword">请输入您的原始密码</string>
+    <string name="textview_proving">验 证</string>
+    <string name="textview_friend_weixin">发给微信好友</string>
+    <string name="textview_circle_friend_weixin">分享到朋友圈</string>
+    <string name="textview_none_date">暂无数据</string>
+    <string name="textview_race_now">正在进行</string>
+    <!-- //** -->
+    <string name="textview_loading">正在加载...</string>
+    <string name="textview_dropListview">下拉刷新</string>
+    <string name="textview_yes_update">上次更新</string>
+    <string name="textview_thistext">This is Content</string>
+    <string name="textview_ym_sendtime">This is State or Send Time</string>
+    <string name="textview_select_date">选择日期</string>
+    <string name="textview_avgStep">平均步数</string>
+    <string name="textview_arrTarget">达标率</string>
+    <string name="textview_todaynum">连续天数</string>
+    <string name="textview_avgJiang">平均步数奖</string>
+    <string name="textview_rangeStep">距离入围步数:</string>
+    <string name="textview_jibai">已击败：</string>
+    <string name="textview_racestep">步</string>
+    <string name="textview_ranknow">您目前是第</string>
+    <string name="textview_de_people">的人</string>
+    <string name="textview_arrTarget_jiang">达标率奖</string>
+    <string name="texview_marginTarget">距离入围:</string>
+    <string name="textview_weight_about">体重情况</string>
+    <string name="textview_weight_record">体重记录</string>
+    <string name="textview_thirty_days">30天</string>
+    <string name="textview_sixty_days">最近60天</string>
+    <string name="textview_half_year">最近半年</string>
+    <string name="textview_one_year">最近一年</string>
+    <string name="textview_weight_edit">编辑</string>
+    <string name="comfirm_success">验证成功！\n请重置您的密码</string>
+    <string name="text_share_cancel">取消</string>
+    <string name="textview_share">选择要分享的内容</string>
+    <string name="share_my_shuju">分享我的简报</string>
+    <string name="share_my_fenbu">分享我的详情</string>
+    <string name="title_activity_friend_pedometer_info">FriendPedometerInfoActivity</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="textview_help">帮助与支持</string>
+    <string name="title_activity_the_menu">TheMenu</string>
+    <string name="menu_settings">设置</string>
+    <string name="menu_delete">删除</string>
+    <string name="title_activity_race_detial">RaceDetialActivity</string>
+    <string name="choicetype">选择类型</string>
+    <string name="default_time">0000-00-00</string>
+    <string name="invite_other">邀请他人</string>
+    <string name="give_bet">下注</string>
+    <string name="betcoin">积分</string>
+    <string name="reward">奖励</string>
+    <string name="championwin">第一名独得</string>
+    <string name="justin3">前三名阶梯分配</string>
+    <string name="input_race_detail">输入竞赛详情...</string>
+    <string name="create_now">创  建</string>
+    <string name="input_race_title">输入竞赛名称(10个字内)</string>
+    <string name="to">至</string>
+    <string name="ok">确定</string>
+    <string name="selectdevice">请选择您的智能运动节点</string>
+   <!--  <string name="selectdevice0descript">蓝牙手环，全面记录您的运动步数，运动时间，热量消耗</string> -->
+    <string name="selectdevice0descript">3G计步器：内置SIM卡，每天三次自动上传运动数据。</string>
+    <string name="selectdevice1descript">蓝牙计步器：与“我尚”客户端自动配对，实时同步运动数据。</string>
+    <string name="selectdevice2descript">蓝牙手环：与“我尚”客户端自动配对，实时同步运动数据。</string>
+    <string name="selectdevice3descript">蓝牙手环：与“我尚”客户端自动配对，实时同步运动数据。</string>
+    
+    <string name="text_height">身高：</string>
+    <string name="text_target_weight">体重目标：</string>
+    <string name="text_input_height">请输入您的身高..</string>
+    <string name="text_height_describe">请在这里输入您的身高(单位：厘米)</string>
+    <string name="textview_target_weight">目标体重</string>
+    <string name="text_input_target_weight">请在这里输入您的目标体重是多少(单位：千克)</string>
+    <string name="text_input_weight">请在这里输入您的体重是多少(单位：千克)</string>
+    <string name="string_birthday">生日：</string>
+    <string name="string_weight">体重：</string>
+    <string name="bloodpresure">血压</string>
+    <string name="bloodsweetie">血糖</string>
+    <string name="weightintitle">体重</string>
+    <string name="medicine_name">药名</string>
+    <string name="notify">提醒</string>
+    <string name="add">添加</string>
+
+
+
+    
+
+</resources>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="30dip"
+        
+        android:background="@drawable/select_expendable_group" >
+
+        <TextView
+            android:id="@+id/textview_racelist_grouptitle"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:gravity="center"
+            android:paddingLeft="8dip"
+            android:text="@string/textview_race_now"
+            android:textColor="#f0f0f0"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/imageview_racelist_group_now"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:paddingLeft="8dip"
+            android:paddingRight="16dip"
+            android:contentDescription="@string/image_content_description"
+            android:src="@drawable/imageview_racelist_now" />
+
+        <TextView
+            android:id="@+id/textview_racelist_groupcount"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_toLeftOf="@id/imageview_racelist_group_now"
+            android:gravity="center"
+            android:textColor="#f0f0f0"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+</LinearLayout>

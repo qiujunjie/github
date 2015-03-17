@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="id" name="linearlayout_null"></item>
+    <item type="id" name="textview_null"></item>
+    <item type="id" name="iamgeview_null"></item>
+    
+    <item type="id" name="edittext_input_your_height"/><!-- 身高输入框 -->
+    <item type="id" name="button_set_height"/><!-- 身高输入框 -->
+    
+     <item type="id" name="edittext_input_your_weight"/><!-- 体重目标输入框-->
+    <item type="id" name="button_set_weight"/><!-- 体重设置按钮 -->
+</resources>

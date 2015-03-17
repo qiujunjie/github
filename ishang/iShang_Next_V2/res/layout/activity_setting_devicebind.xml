@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/sample_background"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title_menu" />
+
+    <cmcc.mhealth.view.QScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <LinearLayout
+                android:id="@+id/linearLayout0"
+                android:layout_width="270dp"
+                android:layout_height="30dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/asd_select_type"
+                    android:layout_width="fill_parent"
+                    android:layout_height="30dp"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="5dp"
+                    android:paddingTop="3dp"
+                    android:text="@string/selectdevice"
+                    android:textColor="@color/gray4"
+                    android:textSize="15dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/asd_ll_viewpager"
+                android:layout_width="fill_parent"
+                android:layout_height="200dp"
+                android:layout_below="@+id/linearLayout0"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/asd_arrow_left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/blue_arrow_left" />
+
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/asd_viewpager"
+                    android:layout_width="270dp"
+                    android:layout_height="200dp" >
+                </android.support.v4.view.ViewPager>
+
+                <ImageView
+                    android:id="@+id/asd_arrow_right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/blue_arrow_right" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout1"
+                android:layout_width="270dp"
+                android:layout_height="60dp"
+                android:layout_alignLeft="@+id/linearLayout0"
+                android:layout_alignRight="@+id/linearLayout0"
+                android:layout_below="@+id/asd_ll_viewpager"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <RadioGroup
+                    android:id="@+id/asd_bind_radiogroup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        android:id="@+id/asd_bind_item1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/my_radio_bg_shape1"
+                        android:button="@drawable/my_radio_button_content"
+                        android:gravity="center" />
+
+                    <RadioButton
+                        android:id="@+id/asd_bind_item2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/my_radio_bg_shape2"
+                        android:button="@drawable/my_radio_button_content"
+                        android:gravity="center" />
+
+                    <RadioButton
+                        android:id="@+id/asd_bind_item3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/my_radio_bg_shape3"
+                        android:button="@drawable/my_radio_button_content"
+                        android:gravity="center" />
+
+                    <RadioButton
+                        android:id="@+id/asd_bind_item4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/my_radio_bg_shape4"
+                        android:button="@drawable/my_radio_button_content"
+                        android:gravity="center" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout4"
+                android:layout_width="240dp"
+                android:layout_height="10dp"
+                android:layout_alignLeft="@+id/linearLayout1"
+                android:layout_alignRight="@+id/linearLayout1"
+                android:layout_below="@+id/linearLayout1"
+                android:layout_marginTop="5dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/LinearLayout5"
+                android:layout_width="240dp"
+                android:layout_height="40dp"
+                android:layout_alignLeft="@+id/linearLayout4"
+                android:layout_alignRight="@+id/linearLayout4"
+                android:layout_below="@+id/linearLayout4"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/asd_select_device_des"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="5dp"
+                    android:paddingTop="3dp"
+                    android:text="@string/selectdevice1descript"
+                    android:textColor="@color/gray4"
+                    android:textSize="13dp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/asd_btn_create"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_alignLeft="@+id/LinearLayout5"
+                android:layout_alignRight="@+id/LinearLayout5"
+                android:layout_below="@+id/LinearLayout5"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/sample_button_click_bg"
+                android:gravity="center"
+                android:text="@string/ok"
+                android:textColor="@color/white"
+                android:textSize="18sp" 
+                android:layout_marginBottom="10dp"/>
+        </RelativeLayout>
+    </cmcc.mhealth.view.QScrollView>
+
+</LinearLayout>

@@ -1,0 +1,24 @@
+1）包名，文件名整理
+	preload:	登录加载页面
+	Pedometor	运动
+	History		历史
+	Weight		体重
+	==
+	Rank		群组排名
+	Campaign	活动
+	==
+	Friend		好友
+	Race		竞赛
+	===================
+	activity/slidingcontrol 界面
+	------------------
+	adapter---list的列表
+	------------------
+	Domain、bean--数据结构：DB、NET
+	---
+	common--通用函数
+	
+	
+2）第三方库
+	lib：google，java，apache等第三方的基础库,网络、gson
+	libs：为特定功能的分析，地图，定位，推送，分享等

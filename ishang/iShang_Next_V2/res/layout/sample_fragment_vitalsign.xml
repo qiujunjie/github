@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title_menu" />
+
+    <RadioGroup
+        android:id="@+id/medicine_group"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/medicine_radio0"
+            style="@style/rank_radoibuttom"
+            android:background="@drawable/rank_radio_left"
+            android:checked="true"
+            android:tag="radio_button0"
+            android:text="@string/medicine_name" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="40.0dip"
+            android:contentDescription="@string/image_content_description"
+            android:src="@drawable/rank_radio_centerview" />
+
+        <RadioButton
+            android:id="@+id/medicine_radio1"
+            style="@style/rank_radoibuttom"
+            android:background="@drawable/rank_radio_center"
+            android:tag="radio_button1"
+            android:text="@string/notify" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="40.0dip"
+            android:contentDescription="@string/image_content_description"
+            android:src="@drawable/rank_radio_centerview" />
+
+        <RadioButton
+            android:id="@+id/medicine_radio2"
+            style="@style/rank_radoibuttom"
+            android:background="@drawable/rank_radio_right"
+            android:tag="radio_button2"
+            android:text="@string/add" />
+    </RadioGroup>
+
+    <cmcc.mhealth.view.UnScrollViewPager
+        android:id="@+id/medicine_parent"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center"
+        android:background="@color/transparent"
+        android:flipInterval="30"
+        android:persistentDrawingCache="animation" />
+
+</LinearLayout>

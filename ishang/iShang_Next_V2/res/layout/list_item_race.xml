@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:app="http://schemas.android.com/apk/res/cmcc.mhealth"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/race_race_item" >
+
+        <cmcc.mhealth.view.RoundAngleImageView
+            android:id="@+id/lir_race_imageview"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/umeng_socialize_share_pic"
+            app:roundHeight="5.0dip"
+            app:roundWidth="5.0dip" />
+
+        <TextView
+            android:id="@+id/lir_race_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/lir_race_imageview"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="2dp"
+            android:layout_toRightOf="@+id/lir_race_imageview"
+            android:maxLength="10"
+            android:text="今天天气不错啊哈哈哈"
+            android:textColor="@color/gray4"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/lir_race_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/lir_race_imageview"
+            android:layout_alignLeft="@+id/lir_race_title"
+            android:text="发起人：未可知"
+            android:textColor="@color/gray4"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/lir_race_type"
+            android:layout_width="27dp"
+            android:layout_height="16dp"
+            android:layout_alignTop="@+id/lir_race_title"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/lir_race_title"
+            android:background="@drawable/race_race_item_state0"
+            android:gravity="center"
+            android:text="双人"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/lir_race_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/lir_race_joinedmembernum"
+            android:layout_alignTop="@+id/lir_race_content"
+            android:text="2000.11.11-3000.11.11"
+            android:textColor="@color/gray0"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:id="@+id/lir_race_arrow"
+            android:layout_width="15dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/race_race_item_arrow" />
+
+        <TextView
+            android:id="@+id/lir_race_joinedmembernum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/lir_race_type"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@+id/lir_race_arrow"
+            android:text="000人参加"
+            android:textColor="@color/blue_low" />
+    </RelativeLayout>
+
+</LinearLayout>

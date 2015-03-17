@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/cmcc.mhealth"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/linearlayout_progress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center_horizontal"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:visibility="gone" >
+
+        <ProgressBar
+            android:id="@+id/progress_race"
+            style="?android:attr/progressBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/textview_updatedate" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <cmcc.mhealth.view.ListViewDropDownRefresh
+            android:id="@+id/listview_rank"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/background"
+            android:divider="@null"
+            android:fastScrollEnabled="true" >
+        </cmcc.mhealth.view.ListViewDropDownRefresh>
+
+        <RelativeLayout
+            android:id="@+id/listview_rl_face"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:visibility="visible" >
+
+            <LinearLayout
+                android:id="@+id/listview_ll_face"
+                android:layout_width="270dp"
+                android:layout_height="270dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true" >
+
+                <cmcc.mhealth.view.RoundAngleImageView
+                    android:id="@+id/listview_iv_face"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    app:roundHeight="20.0dip"
+                    app:roundWidth="20.0dip" />
+            </LinearLayout>
+        </RelativeLayout>
+    </FrameLayout>
+
+</LinearLayout>

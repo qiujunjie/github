@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/sample_background"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title_menu" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="320dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/race_race_detail_upback" >
+
+        <TextView
+            android:id="@+id/ard_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8dp"
+            android:text="标题"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/ard_title_image"
+            android:layout_width="320dp"
+            android:layout_height="150dp"
+            android:layout_below="@+id/ard_title"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/day_detail_11" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignLeft="@+id/ard_title_image"
+            android:layout_below="@+id/ard_title_image"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/race_detial_toukei" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignLeft="@+id/imageView2"
+            android:layout_below="@+id/imageView2"
+            android:layout_marginTop="7dp"
+            android:src="@drawable/race_detial_man" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/imageView3"
+            android:layout_below="@+id/imageView3"
+            android:layout_marginTop="7dp"
+            android:src="@drawable/race_detial_pen" />
+
+        <TextView
+            android:id="@+id/ard_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/imageView2"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="3dp"
+            android:layout_toRightOf="@+id/imageView2"
+            android:text="2011.11.11 至 2012.11.11"
+            android:textColor="@color/gray0"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/ard_founder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/imageView3"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="3dp"
+            android:layout_toRightOf="@+id/imageView3"
+            android:text="发起人：未可知"
+            android:textColor="@color/gray0"
+            android:textSize="13sp" />
+
+        <cmcc.mhealth.view.ScrollForeverTextView
+            android:id="@+id/ard_details"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/imageView4"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="3dp"
+            android:layout_toLeftOf="@+id/ard_exit"
+            android:layout_toRightOf="@+id/imageView3"
+            android:ellipsize="marquee"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:singleLine="true"
+            android:text="非常有益健康的竞赛"
+            android:textColor="@color/gray0"
+            android:textSize="13sp" />
+        
+        <TextView
+            android:id="@+id/ard_membernum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/ard_title_image"
+            android:layout_alignTop="@+id/ard_founder"
+            android:text="0000人参加"
+            android:textColor="@color/blue_low" />
+
+        <RelativeLayout
+            android:id="@+id/ard_join_relativelayout"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/imageView4"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/sample_usercatch_button_ok_bg" >
+
+            <TextView
+                android:id="@+id/ard_join_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:paddingLeft="10dp"
+                android:text="加  入"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/ard_join_icon"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                android:layout_toLeftOf="@+id/ard_join_text"
+                android:src="@drawable/race_detail_join_icon" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/ard_exit"
+            android:layout_width="76dp"
+            android:layout_height="24dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/imageView4"
+            android:background="@drawable/race_detail_exit"
+            android:gravity="center"
+            android:paddingLeft="20dp"
+            android:text="退出"
+            android:textColor="@color/white" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="2dp"
+        android:background="@drawable/race_race_detail_upback"
+        android:orientation="vertical" >
+
+        <ListView
+            android:id="@+id/ard_memberlist"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="2dp"
+            android:cacheColorHint="@color/transparent"
+            android:divider="@drawable/race_race_detail_devider"
+            android:dividerHeight="2dp"
+            android:fadingEdge="none" >
+        </ListView>
+    </LinearLayout>
+
+</LinearLayout>

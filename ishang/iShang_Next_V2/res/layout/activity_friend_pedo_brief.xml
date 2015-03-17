@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/afpb_biref_main"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="5dp"
+    android:background="@drawable/background"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/afpb_linearLayout_pedo_brief_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <include layout="@layout/title_menu2" />
+    </LinearLayout>
+
+    <cmcc.mhealth.view.QScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/afpb_rel_progress"
+                android:layout_width="fill_parent"
+                android:layout_height="160dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/imageview_biref_four"
+                android:orientation="horizontal"
+                android:visibility="visible" >
+
+                <FrameLayout
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:layout_centerInParent="true" >
+
+                    <RelativeLayout
+                        android:id="@+id/afpb_rel_center_progress_period"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/center_round_2"
+                        android:visibility="visible" >
+
+                        <TextView
+                            android:id="@+id/afpb_textivew_textstep1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="30dp"
+                            android:text="总步数"
+                            android:textColor="@color/gold_II"
+                            android:textSize="16sp" />
+
+                        <ImageView
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_below="@id/afpb_textivew_textstep1"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginTop="5dp"
+                            android:minHeight="15dp"
+                            android:minWidth="15dp"
+                            android:src="@drawable/dark_foot" />
+
+                        <TextView
+                            android:id="@+id/afpb_stepnumofperiod"
+                            style="@style/brief_textcolor"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/afpb_textivew_textstep1"
+                            android:layout_centerHorizontal="true"
+                            android:text="0"
+                            android:textSize="25sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/afpb_textivew_textstep1"
+                            android:layout_marginTop="10dp"
+                            android:layout_toRightOf="@id/afpb_stepnumofperiod"
+                            android:text="步"
+                            android:textColor="@color/orange"
+                            android:textSize="14sp" />
+                    </RelativeLayout>
+                </FrameLayout>
+
+                <LinearLayout
+                    android:id="@+id/afpb_linrear_ll1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:paddingLeft="40dp" >
+
+                    <TextView
+                        android:id="@+id/afpb_TextView23"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="时长"
+                        android:textColor="@color/font_content"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/afpb_TextView05"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:text="hh:mm"
+                        android:textColor="@color/font_content"
+                        android:textSize="7sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/afpb_linrear_ll2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="40dp"
+                    android:layout_marginTop="10dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="热量"
+                        android:textColor="@color/font_content"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:text="千卡"
+                        android:textColor="@color/font_content"
+                        android:textSize="7sp" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/afpb_TextView_Duration"
+                    style="@style/brief_textcolor"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/afpb_linrear_ll1"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="left"
+                    android:text="0:0"
+                    android:textSize="21sp" />
+
+                <TextView
+                    android:id="@+id/afpb_textView_cal"
+                    style="@style/brief_textcolor"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@id/afpb_linrear_ll2"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="right"
+                    android:text="0"
+                    android:textSize="21sp" />
+
+                <TextView
+                    android:id="@+id/afpb_textView_stepnum"
+                    style="@style/brief_textcolor"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginBottom="35dp"
+                    android:layout_marginRight="10dp"
+                    android:gravity="right"
+                    android:text="0"
+                    android:textSize="21sp" />
+
+                <LinearLayout
+                    android:id="@+id/afpb_linrear_ll3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginRight="40dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="有效步数"
+                        android:textColor="@color/font_content"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:text="步"
+                        android:textColor="@color/font_content"
+                        android:textSize="7sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/afpb_linrear_ll4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginBottom="10dp"
+                    android:paddingLeft="40dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="距离"
+                        android:textColor="@color/font_content"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:text="Km"
+                        android:textColor="@color/font_content"
+                        android:textSize="7sp" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/afpb_textView_distance"
+                    style="@style/brief_textcolor"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginBottom="35dp"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="left"
+                    android:text="0"
+                    android:textSize="21sp" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginTop="5dp"
+                android:gravity="right" >
+
+                <RadioGroup
+                    android:id="@+id/afpb_radioGroup_daydetail"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_brief_radio"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        android:id="@+id/afpb_radio_step"
+                        android:layout_width="50dp"
+                        android:layout_height="28dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/radio_step"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:text="@string/brief_textview_step_text"
+                        android:textColor="@drawable/brief_radio_text_color"
+                        android:textSize="15sp" />
+
+                    <RadioButton
+                        android:id="@+id/afpb_radio_strength"
+                        android:layout_width="50dp"
+                        android:layout_height="28dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/radio_step_right"
+                        android:button="@null"
+                        android:checked="true"
+                        android:gravity="center"
+                        android:text="@string/brief_textview_minute_text"
+                        android:textColor="@drawable/brief_radio_text_color"
+                        android:textSize="15sp" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/achartengine_height"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp"
+                android:background="@drawable/biref_bg" >
+                
+                <LinearLayout
+                    android:id="@+id/afpb_linearLayout_day_detail"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="4dp"
+                    android:paddingRight="4dp"
+                    android:paddingTop="5dp" >
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lay_minute"
+                    android:layout_width="fill_parent"
+                    android:layout_height="20dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/transparent"
+                    android:gravity="center" >
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:background="@null"
+                        android:drawableLeft="@drawable/img_qingwei"
+                        android:text="轻度"
+                        android:textColor="@color/color_qingwei" />
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:drawableLeft="@drawable/img_yiban"
+                        android:text="适度"
+                        android:textColor="@color/color_putong" />
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:drawableLeft="@drawable/img_julie"
+                        android:text="高强度"
+                        android:textColor="@color/color_julie" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lay_step"
+                    android:layout_width="fill_parent"
+                    android:layout_height="20dp"
+                    android:layout_alignParentBottom="true"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:visibility="invisible" >
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:background="@null"
+                        android:drawableLeft="@drawable/img_lingsan"
+                        android:text="零散步数"
+                        android:textColor="@color/color_putong" />
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:drawableLeft="@drawable/img_youxiao"
+                        android:text="有效步数"
+                        android:textColor="@color/color_julie" />
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </cmcc.mhealth.view.QScrollView>
+
+</LinearLayout>

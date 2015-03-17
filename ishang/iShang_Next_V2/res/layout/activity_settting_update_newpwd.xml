@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical" >
+<include layout="@layout/title_menu" />
+
+    <EditText
+        android:id="@+id/newpwd_edit_setting"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dip"
+        android:layout_marginRight="8dip"
+        android:layout_marginTop="8dip"
+        android:hint="@string/textview_input_newPassword"
+        android:inputType="textPassword" />
+    
+    <EditText
+        android:id="@+id/newpwd_ag_edit_setting"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dip"
+        android:layout_marginRight="8dip"
+        android:layout_marginTop="8dip"
+        android:hint="@string/textview_inputAgain_newPassword"
+        android:inputType="textPassword" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" 
+        android:layout_marginTop="8dip"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10.0dip"
+            android:text="@string/textview_twice_password"
+            android:textColor="@android:color/black" />
+
+        <Button
+            android:id="@+id/UpdatePwd_btn_setting"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_marginRight="5dip"
+            android:layout_gravity="right"
+            android:background="@drawable/listitem_button_round"
+            android:text="@string/textview_sure_update" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/sample_background"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title_menu2" />
+
+    <cmcc.mhealth.view.QScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <LinearLayout
+                android:id="@+id/linearLayout0"
+                android:layout_width="270dp"
+                android:layout_height="35dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/acr_select_type"
+                    android:layout_width="80dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/create_race_select_type"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="5dp"
+                    android:paddingTop="3dp"
+                    android:text="@string/choicetype"
+                    android:textColor="@color/white" />
+
+                <EditText
+                    android:id="@+id/acr_et_title"
+                    android:layout_width="fill_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="2dp"
+                    android:hint="@string/input_race_title"
+                    android:maxLength="10"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/acr_ll_viewpager"
+                android:layout_width="fill_parent"
+                android:layout_height="120dp"
+                android:layout_below="@+id/linearLayout0"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/acr_arrow_left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="4dp"
+                    android:src="@drawable/blue_arrow_left" />
+
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/acr_viewpager"
+                    android:layout_width="270dp"
+                    android:layout_height="130dp" >
+                </android.support.v4.view.ViewPager>
+
+                <ImageView
+                    android:id="@+id/acr_arrow_right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:src="@drawable/blue_arrow_right" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout1"
+                android:layout_width="240dp"
+                android:layout_height="35dp"
+                android:layout_alignLeft="@+id/linearLayout0"
+                android:layout_alignRight="@+id/linearLayout0"
+                android:layout_below="@+id/acr_ll_viewpager"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/acr_imageView1"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/race_detial_toukei" />
+
+                <EditText
+                    android:id="@+id/acr_select_timefrom"
+                    android:layout_width="100dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="12dp"
+                    android:clickable="true"
+                    android:focusable="false"
+                    android:gravity="center"
+                    android:text="@string/default_time"
+                    android:textColor="@color/blue_low"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/acr_tv_zhi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:text="@string/to"
+                    android:textColor="@color/gray4" />
+
+                <EditText
+                    android:id="@+id/acr_select_timeto"
+                    android:layout_width="100dp"
+                    android:layout_height="30dp"
+                    android:clickable="true"
+                    android:focusable="false"
+                    android:gravity="center"
+                    android:text="@string/default_time"
+                    android:textColor="@color/blue_low"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout2"
+                android:layout_width="290dp"
+                android:layout_height="30dp"
+                android:layout_alignLeft="@+id/linearLayout1"
+                android:layout_alignRight="@+id/linearLayout1"
+                android:layout_below="@+id/linearLayout1"
+                android:layout_marginTop="5dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/ImageView02"
+                    android:layout_width="23dp"
+                    android:layout_height="23dp"
+                    android:src="@drawable/create_race_invide_image" />
+
+                <TextView
+                    android:id="@+id/acr_inviting"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/invite_other"
+                    android:textColor="@color/blue_low" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout3"
+                android:layout_width="290dp"
+                android:layout_height="30dp"
+                android:layout_alignLeft="@+id/linearLayout2"
+                android:layout_alignRight="@+id/linearLayout2"
+                android:layout_below="@+id/linearLayout2"
+                android:layout_marginTop="5dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/ImageView01"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/create_race_bet_coin" />
+
+                <TextView
+                    android:id="@+id/TextView01"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/give_bet"
+                    android:textColor="@color/blue_low" />
+
+                <EditText
+                    android:id="@+id/arc_bet_coin_num"
+                    android:layout_width="62dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="3dp"
+                    android:ems="10"
+                    android:inputType="number"
+                    android:maxLength="5"
+                    android:textSize="12sp" >
+                </EditText>
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/betcoin"
+                    android:textColor="@color/gray4" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout4"
+                android:layout_width="290dp"
+                android:layout_height="30dp"
+                android:layout_alignLeft="@+id/linearLayout3"
+                android:layout_alignRight="@+id/linearLayout2"
+                android:layout_below="@+id/linearLayout3"
+                android:layout_marginTop="5dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/ImageView03"
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:src="@drawable/cteate_race_reward" />
+
+                <TextView
+                    android:id="@+id/TextView02"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/reward"
+                    android:textColor="@color/blue_low" />
+
+                <RadioGroup
+                    android:id="@+id/acr_radiogroup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        android:id="@+id/radio_zenichi"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="5dp"
+                        android:background="@drawable/create_race_radio"
+                        android:button="@null"
+                        android:checked="true"
+                        android:gravity="center"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:text="@string/championwin"
+                        android:textColor="@color/gray4"
+                        android:textSize="12sp" />
+
+                    <RadioButton
+                        android:id="@+id/radio_zensan"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="8dp"
+                        android:background="@drawable/create_race_radio"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/acr_radio_text_zensan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:text="@string/justin3"
+                        android:textColor="@color/gray4"
+                        android:textSize="12sp" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/LinearLayout5"
+                android:layout_width="290dp"
+                android:layout_height="74dp"
+                android:layout_alignLeft="@+id/linearLayout4"
+                android:layout_alignRight="@+id/linearLayout4"
+                android:layout_below="@+id/linearLayout4"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/ImageView04"
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:src="@drawable/race_detial_pen" />
+
+                <EditText
+                    android:id="@+id/arc_detail"
+                    android:layout_width="198dp"
+                    android:layout_height="70dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="0.15"
+                    android:ems="10"
+                    android:gravity="left"
+                    android:hint="@string/input_race_detail"
+                    android:lines="3"
+                    android:text=""
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/arc_btn_create"
+                android:layout_width="200dp"
+                android:layout_height="36dp"
+                android:layout_below="@+id/LinearLayout5"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/sample_button_click_bg"
+                android:gravity="center"
+                android:text="@string/create_now"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="36dp"
+                android:layout_below="@+id/arc_btn_create"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"/>
+        </RelativeLayout>
+    </cmcc.mhealth.view.QScrollView>
+
+</LinearLayout>

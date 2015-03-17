@@ -1,0 +1,40 @@
+内部版本发布
+ishang_V1.apk
+versioninfo_V1.json
+apk生成需要修改：
+	5处  代码  搜索 ishang_V1或iShang。 versioninfo
+	修改 Manifest中版本为 内测
+
+======================
+服务器当前版本为：33
+版本发布路径：IP 10.1.5.184 用户名 administrator 密码 iforget 
+版本放置路径为 D:\Tomcat 7.0\webapps\app
+
+google账号 ishanghealth@gmail.com   cmri2013 
+公会版本的ga_trackingId： UA-39613003-2
+
+友盟账号 ishanghealth@gmail.com   cmri2013
+
+
+版本发布流程：
+
+a.版本测试发布
+1. 写更新内容 versioninfo.json，保存原来的版本 格式为 versioninfo.json_v33
+更新内容格式：
+{"verName":"1.4.0.130520","download":"http:\/\/phr.cmri.cn\/app\/iShang.apk","AppName":"我尚运动","verCode":"33","updateInfo":"\n\t我尚运动——健步走测试版发布。\n\t建议升级后在首页面刷新数据！\n\n注意：\n\t如果安装出现问题，建议卸载后,到本地sdcard/iShang.apk安装即可！\n\t"}
+2.准备apk （准备一个之前备份版本的apk，用于测试）
+3.将最新的apk编译成等同于原来的版本（修改AndroidManifest.xml中的版本号android:versionCode； android:versionName；）
+4.手机安装之前备份的版本，开始测试
+
+发布完成后，备份一个测试apk： 修改AndroidManifest.xml中的版本号android:versionCode； android:versionName；为上一个版本号，生成一个apk，备份到服务器，为下一次做测试用
+
+
+b.正式版本发布
+1. 修改AndroidManifest.xml中的版本号android:versionCode； android:versionName；
+2. 修改analytics.xml中 ga_trackingId 的值 
+3. 从bin中取得最新的ishang_trunk.apk程序，改名为ishang.apk
+4. 写更新内容 versioninfo.json，保存原来的版本 格式为 versioninfo.json_v33
+更新内容主要修改 verName verCode updateInfo
+5. 将apk和versioninfo.json 放到服务器上
+
+

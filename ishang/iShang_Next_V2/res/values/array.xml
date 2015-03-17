@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="iShang_menu">
+        <item>我的运动</item>
+        <item>历史记录</item>
+        <item>体重管理</item>
+        <item>班组排名</item>
+        <item>企业活动</item>
+        <item>个人设置</item>
+    </string-array>
+</resources>
